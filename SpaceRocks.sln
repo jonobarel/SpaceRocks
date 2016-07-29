@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{9188EA5A-4AFB-4CBD-3B1D-219BEBA9150F}") = "SpaceRocks", "Assembly-CSharp-firstpass.csproj", "{7AC87104-19A9-A43B-85A2-9DCF0060933C}"
+EndProject
+Project("{9188EA5A-4AFB-4CBD-3B1D-219BEBA9150F}") = "SpaceRocks", "Assembly-CSharp.csproj", "{939E8434-FB0C-294A-2CA8-F07B46C1C8BD}"
+EndProject
+Project("{9188EA5A-4AFB-4CBD-3B1D-219BEBA9150F}") = "SpaceRocks", "Assembly-CSharp-Editor.csproj", "{B4C336C1-F89F-ED0E-85C3-29B29EBB2C11}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7AC87104-19A9-A43B-85A2-9DCF0060933C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AC87104-19A9-A43B-85A2-9DCF0060933C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AC87104-19A9-A43B-85A2-9DCF0060933C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AC87104-19A9-A43B-85A2-9DCF0060933C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939E8434-FB0C-294A-2CA8-F07B46C1C8BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939E8434-FB0C-294A-2CA8-F07B46C1C8BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939E8434-FB0C-294A-2CA8-F07B46C1C8BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939E8434-FB0C-294A-2CA8-F07B46C1C8BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4C336C1-F89F-ED0E-85C3-29B29EBB2C11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4C336C1-F89F-ED0E-85C3-29B29EBB2C11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4C336C1-F89F-ED0E-85C3-29B29EBB2C11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4C336C1-F89F-ED0E-85C3-29B29EBB2C11}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
