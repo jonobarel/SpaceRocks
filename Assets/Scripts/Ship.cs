@@ -6,12 +6,16 @@ public class Ship : MonoBehaviour {
 	void Start () {
 	
 	}
-	
+
+	void OnTriggerEnter() {
+		Debug.Log("Ship collider triggered.");
+	}
+
 	// Update is called once per frame
 	void Update ()
 	{
 		if (Input.GetKey ("up")) {
-			Debug.Log ("UP key pressed");
+			//Debug.Log ("UP key pressed");
 			//TODO - change the acceleration to a variable/constant
 			gameObject.GetComponent<Rigidbody2D> ().AddForce (gameObject.transform.up * 2f);
 			//return Quaternion.AngleAxis(_angle, Vector3.forward) * normalizedDirection;
@@ -19,7 +23,7 @@ public class Ship : MonoBehaviour {
 
 		//TODO add support for axis/input support
 		if (Input.GetAxis ("Horizontal") != 0) {
-			Debug.Log ("Input Horizontal: " + Input.GetAxis ("Horizontal"));
+			//Debug.Log ("Input Horizontal: " + Input.GetAxis ("Horizontal"));
 		}
 			if (Input.GetKey("left")) {
 			//TODO - change the rotation speed to a variable
