@@ -39,7 +39,7 @@ public class Wrapper : MonoBehaviour {
 			//Vector3 newPos = cam.ViewportToWorldPoint(newPos);
 			other.gameObject.transform.position = newPos;
 			} //if != TypeOf(Bullet)
-			else {
+			else if (other.tag == "Bullet"){
 				Debug.Log("destroy bullet");
 				Destroy(other.gameObject);
 			}
