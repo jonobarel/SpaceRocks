@@ -1,16 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Asteroid : MonoBehaviour {
+public class Bullet : MonoBehaviour {
 
 	// Use this for initialization
-
 	void Start () {
-	  //Initialise velocity
-	}
 	
+	}
+
+	void OnTriggerEnter2D (Collider2D other)
+	{
+		//if(other.gameObject.GetType
+	}
+		
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 }

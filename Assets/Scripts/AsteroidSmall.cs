@@ -1,16 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Asteroid : MonoBehaviour {
+public class AsteroidSmall : Asteroid {
 
 	// Use this for initialization
 
-	void Start () {
-	  //Initialise velocity
-	}
-	
 	// Update is called once per frame
-	void Update () {
-	
-	}
+
 }

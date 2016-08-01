@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Ship : MonoBehaviour {
+	public Bullet bulletPrefab;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -33,6 +35,17 @@ public class Ship : MonoBehaviour {
 			//Debug.Log("Right key - ship rotation: "+gameObject.transform.rotation.ToString());
 			//TODO - change the rotation speed to a variable
 			gameObject.transform.Rotate(Vector3.forward*-2);
+		}
+
+		if (Input.GetKeyDown("space")) {
+			Vector3 newPos = transform.position+transform.forward;
+
+			newPos.x*=GetComponent<SpriteRenderer>().bounds.size.y/2;
+			newPos.z+=1;
+
+			Bullet bullet = (Bullet)Instantiate(bulletPrefab,newPos, transform.rotation);
+
+			bullet.GetComponent<Rigidbody2D>().AddForce(bullet.transform.up*1000f);
 		}
 	}
 }

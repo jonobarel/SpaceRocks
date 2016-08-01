@@ -1,2 +1,4 @@
 #Unity temp files
-Temp\
+Temp/
+Temp/*
+Temp/bin/Debug/
