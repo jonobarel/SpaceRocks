@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class Bullet : MonoBehaviour {
-
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -10,9 +10,10 @@ public class Bullet : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other)
 	{
-		//if(other.gameObject.GetType
+		if (other.tag == "Asteroid") {
+			Destroy (gameObject);
+		}
 	}
-		
 	// Update is called once per frame
 	void Update () {
 

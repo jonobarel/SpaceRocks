@@ -19,7 +19,12 @@ public class GameController : MonoBehaviour {
 			Vector3 newPos = new Vector3(Random.Range(2f,7f),Random.Range(2f,5.25f),0);
 			Asteroid asteroid = (Asteroid)GameObject.Instantiate(asteroidPrefab,newPos,new Quaternion ());
 			asteroid.transform.Rotate(Vector3.forward*Random.Range(1,360));
-			asteroid.GetComponent<Rigidbody2D> ().AddForce (asteroid.transform.up * Random.Range (100f, 200f));		
+			asteroid.GetComponent<Rigidbody2D> ().AddForce (asteroid.transform.up * Random.Range (100f, 200f));	
+			float torque = (float)(Random.Range(0,1)*2-1)*Random.Range (50f,100f);
+			asteroid.GetComponent<Rigidbody2D> ().AddTorque (torque);
+
+
+			Debug.Log ("Asteroid "+asteroid.GetInstanceID ()+"velocity magnitude :"+asteroid.GetComponent<Rigidbody2D> ().velocity);	
 		}
 	}
 

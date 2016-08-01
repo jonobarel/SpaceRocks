@@ -14,7 +14,6 @@ public class Wrapper : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D other)
 	{
 		Vector3 viewPos = cam.WorldToViewportPoint (other.gameObject.transform.position);
-		Debug.Log("Other has a tag of: "+other.tag.ToString());
 		//Debug.Log("OnTriggerEnter "+other.gameObject.name+" collided with "+this.gameObject.name);
 		if (other.tag != "Bullet") {
 			
@@ -40,7 +39,6 @@ public class Wrapper : MonoBehaviour {
 			other.gameObject.transform.position = newPos;
 			} //if != TypeOf(Bullet)
 			else if (other.tag == "Bullet"){
-				Debug.Log("destroy bullet");
 				Destroy(other.gameObject);
 			}
 	}
