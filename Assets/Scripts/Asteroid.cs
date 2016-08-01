@@ -3,11 +3,11 @@ using System.Collections;
 
 public class Asteroid : MonoBehaviour {
 	public AsteroidSmall asteroidSmallPrefab;
-
 	// Use this for initialization
-
+	GameController gc;
 	void Start () {
-	  
+		gc = GameController.FindObjectOfType<GameController> ();
+		gc.AddAsteroid();
 	}
 
 	void OnTriggerEnter2D (Collider2D other)
@@ -44,4 +44,9 @@ public class Asteroid : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void OnDestroy() {
+	gc.RemoveAsteroid ();
+	}
+
 }
